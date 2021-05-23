@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body onload="Setup()">
+    <header>
+        <div class="containerheader">
+            <div class="leftheader">
+                
+                <ul class="leftitems">
+                    <li>
+                        <img src="./images/starbuckslogo.png" alt="" class="mainlogo">
+                    </li>
+                    <li class="leftitem"><a href="#">menu</a></li>
+                    <li class="rewards__border"><a href="#">rewards</a></li>
+                    <li class="gift__card"><a href="">gift cards</a></li>
+                </ul>
+            </div>
+            <div class="rightheader">
+                <ul class="rightitems">
+                    <li class="find__store">
+                        <a href="#">Find a store</a>
+                    </li>
+                    <li class="sign__in"> 
+                        <a href="#">Sign in</a>
+                    </li>
+                    <li class="join__now">
+                        <a href="#">Join now</a>
+                    </li>
+                    <li>
+                        <div class="hambourger">
+                            
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        
+    </header>
+<main>
+
+    <section class="sticky">
+        <div class="starbucksrewards">
+            <p class="rewardstext">
+                starbucks rewards
+            </p>
+        </div>
+    </section>
+
+    <section class="heroimage">
+        <div class="mainimage">
+            <div class="hero-text">
+                <h1>free coffe <br> is a tap away</h1>
+                <p>Join now to start earning Rewards</p>
+                <button class="join__now__btn">Join now</button>
+                <p class="">Or <a href="#">join in the app</a> for the best experience</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="main__grid">
+            <div class="grid__title">
+                <h1 class="main__started__title">
+                    Getting started is easy
+                </h1>
+                <h6 class="main_grid_title_description">
+                    Earn Stars and get rewarded in a few easy steps.
+                </h2>
+            </div>
+            <div class="grid__collum">
+                <h1 class="grid__collum__first__item">1</h1>
+                <h5 class="grid__collum__second__item">
+                    create an account
+                </h5>
+                <p class="grid__collum__third__item">
+                    To get started ,
+                     <a href="#">join now.  </a>   
+                     You can  also 
+                    <a href="#">join in app</a> 
+                    to get access to 
+                     the full range of starbucks Rewards 
+                      benefits.
+
+                </p>
+            </div>
+            <div class="grid__collum">
+                <h1 class="grid__collum__first__item">2</h1>
+                <h5 class="grid__collum__second__item">
+                    Order and pay how you’d  like
+                </h5>
+                <p class="grid__collum__third__item">
+                    Use cash, credit/debit card or save 
+                    some time and pay right through 
+                    the app. You’ll collect Stars all ways.
+                    <a href="#">Learn how</a>
+
+
+                </p>
+            </div>
+            <div class="grid__collum">
+                <h1 class="grid__collum__first__item">3</h1>
+                <h5 class="grid__collum__second__item">
+                    Earn Stars, get Rewards
+                </h5>
+                <p class="grid__collum__third__item">
+                    As you earn Stars, you can redeem them for Rewards—like free food, drinks, and more. Start redeeming with as little as 25 Stars!
+
+
+                </p>
+            </div>
+            
+
+        </div>
+    </section>
+
+    <section>
+        
+            <div class="tabstitle">
+                <h1>Get your favorites for free</h1>
+                <ul class="tabs__btn">
+                    <li>
+                        <button class="tab__button active" onclick="displayTab(event,'firstFreeTab')">
+                            25
+                    </button>
+                    </li>
+                    <li>
+                        <button  class="tab__button" onclick="displayTab(event,'secondFreeTab')" >50</button>
+                    </li>
+                    <li>
+                        <button  class="tab__button " onclick="displayTab(event,'thirdFreeTab')">150</button>
+                    </li>
+                    <li>
+                        <button  class="tab__button" onclick="displayTab(event,'fourthFreeTab')">200</button>
+                    </li>
+                    <li>
+                        <button  class="tab__button" onclick="displayTab(event,'fifthFreeTab')">400</button>
+                    </li>
+                </ul>
+                <div class="moving__border " >
+                    
+                </div>
+            </div>
+    </section>
+
+    <section>
+        <div class="tabs__container active___container__tab" id="firstFreeTab">
+            <div class="favorites__free__tab">
+                    <img src="./images/025.png" alt="" class="tab__image">
+                <div class="text__container__tab">
+                    <h3>Customize your drink</h3>
+                    <p>Make your drink just right with an extra espresso shot, dairy substitute or a dash of your favorite syrup</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tabs__container" id="secondFreeTab">
+            <div class="favorites__free__tab">
+                <img src="./images/050.png" alt="" class="tab__image">
+                <div class="text__container__tab">
+                    <h3>Customize your drink</h3>
+                    <p>Make your drink just right with an extra espresso shot, dairy substitute or a dash of your favorite syrup</p>
+                </div>
+            </div>
+        </div>
+        <div class="tabs__container" id="thirdFreeTab">
+
+            <div class="favorites__free__tab" >
+                <img src="./images/150.png" alt="" class="tab__image">
+                <div class="text__container__tab">
+                    <h3>Customize your drink</h3>
+                    <p>Make your drink just right with an extra espresso shot, dairy substitute or a dash of your favorite syrup</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tabs__container" id="fourthFreeTab">
+            <div class="favorites__free__tab">
+                <img src="./images/200.png" alt="" class="tab__image">
+                <div class="text__container__tab">
+                    <h3>Customize your drink</h3>
+                    <p>Make your drink just right with an extra espresso shot, dairy substitute or a dash of your favorite syrup</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tabs__container" id="fifthFreeTab">
+            <div class="favorites__free__tab">
+                <img src="./images/400.png" alt="" class="tab__image">
+                <div class="text__container__tab">
+                    <h3>Customize your drink</h3>
+                    <p>Make your drink just right with an extra espresso shot, dairy substitute or a dash of your favorite syrup</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="main__grid">
+            <div class="grid__title">
+                <h1 class="main__started__title">
+                    Endless Extras
+                </h1>
+                <h6 class="main_grid_title_description">
+                    Joining Starbucks® Rewards means unlocking access to exclusive benefits. Say hello to easy ordering, tasty Rewards and—yes, free coffee.
+                </h2>
+            </div>
+            <div class="grid__collum">
+                <h1 class="grid__collum__first__item">1</h1>
+                <h5 class="grid__collum__second__item">
+                    create an account
+                </h5>
+                <p class="grid__collum__third__item">
+                    To get started ,
+                     <a href="#">join now.  </a>   
+                     You can  also 
+                    <a href="#">join in app</a> 
+                    to get access to 
+                     the full range of starbucks Rewards 
+                      benefits.
+
+                </p>
+            </div>
+            <div class="grid__collum">
+                <h1 class="grid__collum__first__item">2</h1>
+                <h5 class="grid__collum__second__item">
+                    Order and pay how you’d  like
+                </h5>
+                <p class="grid__collum__third__item">
+                    Use cash, credit/debit card or save 
+                    some time and pay right through 
+                    the app. You’ll collect Stars all ways.
+                    <a href="#">Learn how</a>
+
+
+                </p>
+            </div>
+            <div class="grid__collum">
+                <h1 class="grid__collum__first__item">3</h1>
+                <h5 class="grid__collum__second__item">
+                    Earn Stars, get Rewards
+                </h5>
+                <p class="grid__collum__third__item">
+                    As you earn Stars, you can redeem them for Rewards—like free food, drinks, and more. Start redeeming with as little as 25 Stars!
+
+
+                </p>
+            </div>
+            
+
+        </div>
+    </section>
+        
+</main>
+    
+    <script src="./main.js"></script>
+</body>
+</html>

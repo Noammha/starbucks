@@ -1,0 +1,168 @@
+.containerheader {
+  background: white;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.containerheader .mainlogo {
+  width: 40px;
+  height: 40px;
+}
+
+.containerheader a:hover {
+  color: #008248;
+}
+
+.containerheader a {
+  padding: 30px 0;
+}
+
+.leftheader {
+  width: 40%;
+  padding-left: 1.5em;
+}
+
+.leftheader .leftitems {
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1em;
+  padding: 0;
+  width: 100%;
+}
+
+.leftitem, .rewards__border, .gift__card, .find__store, .join__now, .sign__in {
+  display: none;
+}
+
+.leftitems a {
+  font-weight: 600;
+  font-size: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+.rewards__border {
+  padding-bottom: 15px;
+  padding-top: 20px;
+  border-bottom: #008248 0.3em solid;
+}
+
+.gift__card {
+  min-width: 65px;
+}
+
+.rightheader {
+  width: 45%;
+  padding-right: 1.5em;
+}
+
+.rightheader .rightitems {
+  gap: 1em;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  width: 100%;
+}
+
+.rightitems {
+  margin: 0;
+  padding-right: 5px;
+}
+
+.rightitems a {
+  text-align: initial;
+  font-weight: 600;
+  font-size: 10px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.sign__in {
+  text-align: center;
+  padding: 0 0.7em 0.2em 0.7em;
+  border: black 1px solid;
+  border-radius: 50px;
+}
+
+.sign__in:hover {
+  background: rgba(128, 128, 128, 0.1);
+}
+
+.join__now {
+  text-align: center;
+  padding: 0 0.7em 0.2em 0.7em;
+  border: black 1px solid;
+  border-radius: 50px;
+  background: black;
+}
+
+.join__now a {
+  color: white;
+}
+
+.hambourger {
+  position: relative;
+  width: 10px;
+  height: 3px;
+  background-color: black;
+}
+
+.hambourger::before, .hambourger::after {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 3px;
+  background-color: black;
+}
+
+.hambourger::before {
+  top: -4px;
+}
+
+.hambourger::after {
+  bottom: -4px;
+}
+
+@media (min-width: 550px) {
+  .leftitem, .rewards__border, .gift__card, .find__store, .join__now, .sign__in {
+    display: -webkit-box;
+  }
+  .hambourger {
+    display: none;
+  }
+  .rightitems {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,251 @@
+@import "./header.scss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+$darkgreen:#114437;
+$primarycolor:#008248;
+$textcolor:#000000;
+$greenish__blue:#d4e9e2;
+$cream:#f3f1e7;
+$gridTemplate:1fr 1fr 1fr;
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+//second section
+.sticky
+{
+    width: 100%;
+    height: 2em;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    & .starbucksrewards
+    {
+        
+        color: white;
+        height: 100%;
+        background: $darkgreen;
+    }
+}
+.rewardstext
+{
+    
+    font-size: 12px;
+    padding-top: 0.8em;
+    text-transform: uppercase;
+    padding-left: 5.5em;
+    margin: 0;
+}
+.mainimage
+{
+    
+    background: url(../images/star.png) center ;
+    width: 100%;
+    height: 80vh;
+    
+    background-size: cover;
+  
+    background-repeat: no-repeat;
+    position:relative ;
+  
+
+    & h1 {
+        margin: 0;
+    }
+}
+.hero-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top:20%;
+    left: 5%;
+    & h1 {
+        text-transform: uppercase;
+        text-align: left;
+    }
+    & p 
+    {
+        text-align: left;
+        & a {
+            color:black;
+            &:hover{
+                text-decoration: none;
+            }
+            
+        }
+    }
+}
+.join__now__btn
+{
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 10px;
+    text-align: center;
+    width:70px ;
+    height: 20px;
+    // padding: 0.2em 0.7em;
+    padding:0 0.7em 0.2em 0.7em;
+    border: black 1px solid;
+    border-radius: 10px;
+    background: $primarycolor;
+    color: white;
+    &:hover
+    {
+        background:rgba($color: $primarycolor, $alpha: 0.9);
+    }
+}
+//third section
+.main__grid
+{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items:center;
+    column-gap: 5em;
+    row-gap: 1em;
+    font-size: 10px;
+    margin: 50px 30px 0 30px;
+    
+}
+.grid__title
+{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    grid-column: 1/-1;
+    & .main_grid_title_description
+    {
+        font-weight: 500;
+        margin-top: 0;
+        max-width:48em;
+    }
+
+    
+}
+.grid__collum
+{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   & .grid__collum__first__item{
+       color:$primarycolor ;
+       text-align: center;
+       padding: 5px 10px;
+       border:$primarycolor solid 1.5px ;
+       border-radius: 100%;
+       margin: 0;
+   }
+
+   & .grid__collum__third__item
+   {
+       margin: 0 0 20px 0 ;
+    & a {
+        color: $primarycolor;
+    }
+       padding-left: 10px;
+       text-align: center;
+   }
+}
+
+@media (min-width:550px)
+{
+    .main__grid{
+        grid-template-columns: $gridTemplate;
+    }
+}
+//fourth section
+.tabstitle
+{
+    
+    height: 100px;
+    background-color: $cream;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    & h1 
+    {
+        font-size: 20px;
+    }
+}
+.tabs__btn
+{
+    
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+    gap: 2em;
+    width: 100%;
+    display: flex;
+    & button 
+    {
+        border: none;
+        cursor: pointer;
+        padding-bottom: 10px;
+    }
+}
+
+.moving__border
+{
+    position: absolute;
+    
+    border-bottom: $primarycolor 4px solid ;
+    z-index: 1;
+
+    
+    transition: .5s;
+}
+//fourth section tabs
+.tabs__container{
+    
+    display: none;
+    
+
+    &.active___container__tab
+    {
+        display: block;
+        
+        
+    }
+}
+.favorites__free__tab
+{
+
+    font-size: 12px;
+    background: $greenish__blue;
+    text-align: start;
+    display: flex;
+    
+    align-items: center;
+    gap: 5%;
+    // justify-content: space-around;
+
+    
+
+}
+.text__container__tab
+{
+    padding-top: 2em;
+}
+.img__container
+{
+    display: flex;
+    justify-content: flex-end;
+}
+.tab__image
+{
+    width:50%;
+    max-width: 400px;
+}
+//fifth section
+
+
+
+
+
+
+
+
