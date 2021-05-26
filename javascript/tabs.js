@@ -1,5 +1,7 @@
+
+
 //the animation on selected tab
-function  opentab(event,movingborder,arrayOfButtons)
+function  opentab(event,movingborder)
 {
     const active = document.querySelector('.active');
     const target=event.target;
@@ -14,10 +16,7 @@ function  opentab(event,movingborder,arrayOfButtons)
     movingborder.style.top=`calc(${top}px - 5px)`;
     movingborder.style.left=`calc(${left}px - 10px)`;
     active.classList.remove('active');
-    target.classList.add('active')
-    
-    
-    
+    target.classList.add('active');
 }
 // setting up the initial position of the moving border
 function Setup()
@@ -47,14 +46,7 @@ function resize(movingborder)
     movingborder.style.top=`calc(${top}px - 5px)`;
     
 }
-    function displayTab(e,id)
-    {
-        const tab= document.getElementById(`${id}`);
-        
-        const activeTab=document.querySelector(".active___container__tab");
-       activeTab.classList.remove("active___container__tab");
-       tab.classList.add("active___container__tab");
-    }
+    
     const movingBorder=document.querySelector(".moving__border")
     const active = document.querySelector('.active');
     const nodeOfButtons=document.querySelectorAll('.tab__button');
@@ -62,13 +54,15 @@ function resize(movingborder)
     arrayOfButtons.forEach(arrayOfButton => {
         arrayOfButton.addEventListener("click",function (e)
         {
-            opentab(e,movingBorder,arrayOfButtons);
+            opentab(e,movingBorder);
         })
     })
     window.addEventListener("resize",function()
     {
         resize(movingBorder);
     })
-    
+
+export {opentab,Setup,resize,movingBorder,active,nodeOfButtons,arrayOfButtons};
+
 
 
